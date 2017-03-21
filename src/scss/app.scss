@@ -1,0 +1,78 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    background-color: #222;
+    color: #fff;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* container class */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* background */
+#background {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 0.75s linear;
+    z-index: -1;
+}
+
+#background > img {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+}
+
+/* greeting */
+#greeting {
+    font-size: 4em;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0 0 30px #000;
+}
+
+/* quote */
+#quote {
+    font-size: 1.5em;
+    padding: .5em 1em;
+    width: 80%;
+    max-width: 720px;
+    border-radius: 8px;
+    text-shadow: 0 0 40px #000;
+}
+#quote > a {
+    color: #fff;
+    text-align: justify;
+    text-decoration: none;
+}
+#quote > a:hover {
+    color: #f33;
+}
+#quote p {
+    padding: .25em 0;
+    margin: 0;
+}
+#quote > p {
+    font-style: italic;
+    text-align: right
+}
+
